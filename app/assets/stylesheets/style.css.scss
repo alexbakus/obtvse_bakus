@@ -1,0 +1,27 @@
+/* Custom CSS Changes to app - allowing to update Obtvse on CSS without
+* incurring problems with updates to engine */
+
+
+header {
+  width: 175px !important;
+}
+
+#container {
+  margin-left: 255px !important;
+}
+
+.about_image {
+width: 100%;
+margin-top: -40px;
+margin-left: -15px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.about_image img {
+width: 200px;
+height: 200px;
+border-radius: 130px;
+-moz-border-radius: 130px;
+-webkit-border-radius: 130px;
+}
