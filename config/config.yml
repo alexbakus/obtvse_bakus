@@ -5,6 +5,7 @@ login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" 
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
 name:                Alex Bakus
 twitter:             alexanderbak
+linkedIn:            alexanderbakus
 github:              alexbakus
 email:               alexanderbak@gmail.com
 google_analytics_id: UA-25408022-1
