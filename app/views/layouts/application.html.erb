@@ -15,6 +15,7 @@
     <h1><%= link_to CONFIG['title'], root_url %></h1>
     <span><%= CONFIG['tagline'].html_safe %></span>
     <ul>
+      <li><%= link_to 'posts', '/posts' %></li>
       <% if CONFIG['twitter'] %>
         <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'] %></li>
       <% end %>
@@ -43,7 +44,7 @@
     <% end %>
     <div id="content">
       <% if notice %><span class="notice"><%= notice %></span><% end %>
-      <%= yield %>
+      <%= yield %>  
     </div>
   </div>
 

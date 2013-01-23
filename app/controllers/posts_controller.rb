@@ -4,14 +4,14 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.page(params[:page]).per(10).where(draft:false)
-
     respond_to do |format|
       format.html
       format.xml { render :xml => @posts }
       format.rss { render :layout => false }
     end
+    
   end
-
+  
   def preview
     @post = Post.new(params[:post])
     @preview = true
