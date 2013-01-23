@@ -1,15 +1,14 @@
 class PostsController < ApplicationController
-  before_filter :authenticate, :except => [:index, :show]
+  before_filter :authenticate, :except => [:index, :show, :blog]
   layout :choose_layout
 
   def index
-    @posts = Post.page(params[:page]).per(10).where(draft:false)
+     @posts = Post.page(params[:page]).per(10).where(draft:false)
     respond_to do |format|
       format.html
       format.xml { render :xml => @posts }
       format.rss { render :layout => false }
     end
-    
   end
   
   def preview

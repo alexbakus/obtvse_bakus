@@ -4,6 +4,7 @@ tagline:             happy warrior in <br /> SAAS world
 login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
 name:                Alex Bakus
+staticpost:          flic-ou-voyou
 twitter:             alexanderbak
 linkedIn:            alexanderbakus
 github:              alexbakus
