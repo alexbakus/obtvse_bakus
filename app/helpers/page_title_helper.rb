@@ -3,7 +3,7 @@ module PageTitleHelper
     if content.present?
       [content,CONFIG['title']].join(' - ')
     else
-      CONFIG['title']
+      [CONFIG['title'],CONFIG['tagline']].join(' - ')
     end
   end
 

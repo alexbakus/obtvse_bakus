@@ -7,13 +7,15 @@
   <meta name="author" content="<%= CONFIG['name'] %>">
   <link href="/posts.rss" rel="alternate" title="RSS" type="application/rss+xml" />
   <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css' />
+  <%= favicon_link_tag 'favicon.ico' %>
 </head>
 
 <body class="<%= controller_name %> <%= action_name %>">
   <% unless @no_header %>
   <header>
     <h1><%= link_to CONFIG['title'], root_url %></h1>
-    <span><%= CONFIG['tagline'].html_safe %></span>
+    <br />
+    <h4><%= CONFIG['tagline'].html_safe %></h4>
     <ul>
       <li><%= link_to 'intro', '/' + CONFIG['staticpost'] %></li>
       <% if CONFIG['twitter'] %>
