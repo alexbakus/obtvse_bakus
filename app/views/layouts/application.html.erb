@@ -19,21 +19,21 @@
     <ul>
       <li><%= link_to 'intro', '/' + CONFIG['staticpost'] %></li>
       <% if CONFIG['twitter'] %>
-        <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'] %></li>
+        <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'],  :target => "_blank" %></li>
       <% end %>
       <% if CONFIG['linkedIn'] %>
-        <li><%= link_to 'LinkedIN', 'http://www.linkedin.com/in/' + CONFIG['linkedIn'] %></li>
+        <li><%= link_to 'LinkedIN', 'http://www.linkedin.com/in/' + CONFIG['linkedIn', :target => "_blank"] %></li>
       <% end %>
       <% if CONFIG['github'] %>
-        <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
+        <li><%= link_to 'github', 'https://github.com/' + CONFIG['github', :target => "_blank"] %></li>
       <% end %>
       <% if CONFIG['email'] %>
         <li><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
       <% end %>
-      <li><%= link_to 'rss feed', '/posts.rss' %></li>
+      <li><%= link_to 'rss feed', '/posts.rss', :target => "_blank" %></li>
     </ul>
     <span class="powered-by">
-      Powered by <a href="http://github.com/natew/obtvse.git">Obtvse</a>
+      Powered by <a href="http://github.com/natew/obtvse.git" target="_blank">Obtvse</a>
       <% if is_admin? %> &nbsp;&middot;&nbsp; <a href="/admin">Admin</a><% end %>
   </span>
 
