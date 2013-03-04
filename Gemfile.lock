@@ -189,7 +189,7 @@ DEPENDENCIES
   foreman (~> 0.40)
   jquery-rails (~> 2)
   kaminari (~> 0.13)
-  newrelic_rpm (~> 3)
+  newrelic_rpm
   pg (~> 0.13)
   rails (~> 3)
   rails_best_practices (~> 1)
